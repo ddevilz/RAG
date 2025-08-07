@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+requests
+langchain
+openai
+langchain-openai
+python-dotenv
+faiss-cpu
+pydantic-settings
+langchain-community
+pypdf
