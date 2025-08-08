@@ -21,33 +21,33 @@ RAG API enables users to submit document URLs (PDF, DOCX, Emails) and questions,
 🏗️ Architecture & Data Flow
 
 text
-      +-----------+        +------------------+        +-----------------+        
+            
       |  API User | -----> | Document Download| -----> | Text Extraction |        
-      +-----------+        +------------------+        +-----------------+       
+             
                                                                 |
-                                                        +---------------------+
-                                                        |    Text Chunking    |
-                                                        +---------------------+
+                                                      
+                                                          Text Chunking    
+                                                   
                                                                 |          
-                                                            +---------+
+                                                          
                                                             |Embedding|
-                                                            +---------+
+                                                            
                                                                 |
-                                                        +-----------------------+
+                                                     
                                                         |    FAISS Vector Store |
-                                                        +---------+-------------+
+                                                        
                                                                 |
-                                                        +-------------------------------+
+                                                    
                                                         | Semantic Similarity Retrieval |
-                                                        +-------------------------------+
+                                                      
                                                                 |
-                                                        +------------------------+
+                                                      
                                                         |     LLM Answering      |
-                                                        +------------------------+
+                                                       
                                                                |
-                                                        +--------------------+
+                                                        
                                                         |   API Response     |
-                                                        +--------------------+
+                                                       
 Step-by-step:
 
 * Request: User posts document URLs and questions
