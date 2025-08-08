@@ -19,6 +19,7 @@ RAG API enables users to submit document URLs (PDF, DOCX, Emails) and questions,
 - Modular: easy to extend with new document types, models, or vector store backends
 
 🏗️ Architecture & Data Flow
+
 text
       +-----------+        +------------------+        +-----------------+        
       |  API User | -----> | Document Download| -----> | Text Extraction |        
