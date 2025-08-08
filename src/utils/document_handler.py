@@ -42,7 +42,7 @@ class DocumentHandler:
             content_type = response.headers.get('Content-Type', '')
             doc_type = self._get_doc_type(content_type, url)
             if not filename:
-                filename = f"test-{uuid.uuid4()}"
+                filename = "test"
             file_path = os.path.join(self.documents_path, f"{filename}.{doc_type}")
 
             with open(file_path, 'wb') as file:
